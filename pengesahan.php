@@ -20,7 +20,7 @@ $jumlah = $hargaUnit * $slot;
             background: #eef2f7;
         }
         .box {
-            max-width: 600px;
+            max-width: 650px;
             margin: auto;
             background: white;
             padding: 20px;
