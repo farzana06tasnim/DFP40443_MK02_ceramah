@@ -5,7 +5,7 @@ $telefon  = $_POST['telefon'];
 $kategori = $_POST['kategori'];
 $slot     = $_POST['slot'];
 
-$hargaUnit = 1550;
+$hargaUnit = 1750;
 $jumlah = $hargaUnit * $slot;
 ?>
 
