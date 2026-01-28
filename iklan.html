@@ -3,82 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <title>Pendaftaran Ceramah Berbayar</title>
+
     <style>
-body {
-    font-family: Arial, sans-serif;
-    background: #f2f4f7;
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f4f7;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #0b5ed7;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px;
+            background: #0b5ed7;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        .checkbox-group input {
+            width: auto;
+            margin-right: 10px;
+        }
+        .center-img {
+          display: block;
+          margin: auto;
+          width: 200px;
+          border: 3px solid #0b5ed7;
+          border-radius: 8px;
 }
 
-.container {
-    max-width: 800px;
-    margin: auto;
-    background: white;
-    padding: 20px;
-}
 
-h1 {
-    color: #0b5ed7;
-}
-
-label {
-    display: block;
-    margin-top: 10px;
-}
-
-input, select {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-}
-
-button {
-    margin-top: 15px;
-    padding: 10px;
-    background: #0b5ed7;
-    color: white;
-    border: none;
-}
-
-
-.checkbox-group {
-    display: flex;
-    align-items: center;
-    margin-top: 15px;
-}
-
-.checkbox-group input {
-    width: auto;   
-    margin-right: 10px;
-}
-
-.checkbox-group label {
-    margin: 0;
-}
-
-
-
-       
-        
     </style>
 </head>
 <body>
 
 <div class="container">
-     <img src="gambarmadam.jpeg" alt="gambar"style="width:200px;">
 
-    <!-- FASA 1 -->
-    <h1>Ceramah :KEPENTINGAN PENDIDIKAN </h1>
-    <p><strong>Penceramah:</strong>Ts.Nor Hafizah binti Md Desa</p>
+    <img src="gambarmadam.jpeg" class="center-img">
+
+
+
+    <h1>Ceramah: KEPENTINGAN PENDIDIKAN</h1>
+    <p><strong>Penceramah:</strong> Ts. Nor Hafizah binti Md Desa</p>
     <p><strong>Tarikh:</strong> 15 Oktober 2026</p>
     <p><strong>Lokasi:</strong> Dewan Seri</p>
     <p><strong>Sinopsis:</strong> Mengetahui lebih mendalam tentang pendidikan</p>
-    <p><strong>No.Telefon:</strong> 017-4562436</p>
+    <p><strong>No Telefon:</strong> 017-4562436</p>
     <p><strong>Email:</strong> dira@gmail.com</p>
 
-    <!-- FASA 2 -->
     <h2>Borang Pendaftaran</h2>
 
     <form action="pengesahan.php" method="POST" enctype="multipart/form-data">
+
         <label>Nama Penuh</label>
         <input type="text" name="nama" required>
 
@@ -104,13 +107,13 @@ button {
         <input type="file" name="bukti" required>
 
         <div class="checkbox-group">
-            <input type="checkbox" id="terma" required>
-            <label for="terma">Saya bersetuju dengan Terma & Syarat</label>
+            <input type="checkbox" required>
+            <label>Saya bersetuju dengan Terma & Syarat</label>
         </div>
 
         <button type="submit">Hantar</button>
-    </form>
 
+    </form>
 </div>
 
 </body>
